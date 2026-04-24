@@ -4,9 +4,10 @@
   "description": "05 - Mini Pokédex Web",
   "license": "ISC",
   "author": "Milena Winer",
-  "type": "modules",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "start":"node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
