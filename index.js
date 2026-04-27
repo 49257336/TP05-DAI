@@ -6,3 +6,4 @@ app.listen(port, () => {
     console.log("escuchando el puerto "+port);
 });
 
+console.log("APP:", app);
