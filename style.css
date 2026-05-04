@@ -1,22 +1,106 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Fondo general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff1c1c, #b30000);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  border: 5px solid #222;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Input */
+input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  outline: none;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ff1c1c;
+}
+
+/* Botón */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #ff1c1c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+}
+
+/* Resultado */
 .pokemon {
   margin-top: 20px;
 }
 
-img {
-  width: 150px;
+/* Imagen */
+.pokemon img {
+  width: 120px;
+  margin: 10px 0;
 }
 
-.loading {
-  font-weight: bold;
+/* Nombre */
+.pokemon h2 {
+  color: #333;
+}
+
+/* Texto */
+.pokemon p {
+  margin: 5px 0;
   color: #555;
 }
 
+/* Loading */
+.loading {
+  font-weight: bold;
+  color: #666;
+  animation: blink 1s infinite;
+}
+
+/* Error */
 .error {
-    font-weight: bold;
-  color: #aa0404;
+  color: red;
+  font-weight: bold;
+}
+
+/* Animación */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
 }
