@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.pokemon {
+  margin-top: 20px;
+}
+
+img {
+  width: 150px;
+}
+
+.loading {
+  font-weight: bold;
+  color: #555;
+}
+
+.error {
+    font-weight: bold;
+  color: #aa0404;
+}
