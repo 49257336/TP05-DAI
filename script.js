@@ -7,7 +7,7 @@ async function buscarPokemon(){
         const resultado = document.getElementById('resultado');
         
         resultado.innerHTML = '<p class="loading">Cargando...</p>';
-          if (/^\d+$/.test(nombre)) {
+          if (!isNaN(nombre)) {
             throw new Error("Pokémon no encontrado");
         }
         const respuesta = await fetch(`https://pokeapi.co/api/v2/pokemon/${nombre}`);
